@@ -148,6 +148,7 @@ sudo nano /etc/iptables/rules.v4
 -A INPUT -p tcp -m state --state NEW -m tcp --dport 443 -j ACCEPT
 -A INPUT -p tcp -m state --state NEW -m tcp --dport 888 -j ACCEPT
 -A INPUT -p tcp -m state --state NEW -m tcp --dport 2004 -j ACCEPT
+-A INPUT -p tcp -m state --state NEW -m tcp --dport 3306 -j ACCEPT
 -A INPUT -p tcp -m state --state NEW -m tcp --dport 5432 -j ACCEPT
 -A INPUT -p tcp -m state --state NEW -m tcp --dport 6379 -j ACCEPT
 -A INPUT -p tcp -m state --state NEW -m tcp --dport 8000 -j ACCEPT
